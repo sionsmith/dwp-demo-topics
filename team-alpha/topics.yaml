@@ -6,5 +6,3 @@ spec:
   kafkaClusterRef:
     name: kafka
     namespace: team-alpha
-  configs:
-    confluent.key.schema.validation: "true"
