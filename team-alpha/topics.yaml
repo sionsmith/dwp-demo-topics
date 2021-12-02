@@ -6,3 +6,13 @@ spec:
   kafkaClusterRef:
     name: kafka
     namespace: team-alpha
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: _confluent-license
+spec:
+  kafkaClusterRef:
+    name: kafka
+    namespace: team-alpha
+---
