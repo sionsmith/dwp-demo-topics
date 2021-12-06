@@ -2,6 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: team-alpha
 resources:
+  - team-alpha-resouces.yaml
   - namespace.yaml
   - confluent
   - topics
