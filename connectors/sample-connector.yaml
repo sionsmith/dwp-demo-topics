@@ -1,0 +1,18 @@
+#apiVersion: platform.confluent.io/v1beta1
+#kind: Connector
+#metadata:
+#  name: replicator
+#spec:
+#  name: connector
+#  class: "io.confluent.connect.replicator.ReplicatorSourceConnector"
+#  taskMax: 4
+#  configs:
+#    topic.whitelist: "gitops4lyfe"
+#    topic.rename.format: "dc_${topic}"
+#    key.converter: "io.confluent.connect.replicator.util.ByteArrayConverter"
+#    value.converter: "io.confluent.connect.replicator.util.ByteArrayConverter"
+#    src.kafka.bootstrap.servers: "kafka.team-alpha.svc.cluster.local:9071"
+#    dest.kafka.bootstrap.servers: "kafka.team-alpha.svc.cluster.local:9071"
+#    src.consumer.group.id: "replicator"
+#    confluent.license: ""
+#    confluent.topic.replication.factor: "1"
